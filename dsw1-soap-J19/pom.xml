@@ -17,10 +17,18 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 93c97be32d715f57d09173b5011473c798de9c76
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+<<<<<<< HEAD
+=======
+		
+>>>>>>> 93c97be32d715f57d09173b5011473c798de9c76
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
@@ -31,6 +39,15 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
+=======
+
+		<dependency>
+			<groupId>wsdl4j</groupId>
+			<artifactId>wsdl4j</artifactId>
+		</dependency>
+
+>>>>>>> 93c97be32d715f57d09173b5011473c798de9c76
 	</dependencies>
 
 	<build>
@@ -39,6 +56,30 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+<<<<<<< HEAD
+=======
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>jaxb2-maven-plugin</artifactId>
+				<version>3.1.0</version>
+				<executions>
+					<execution>
+						<id>xjc</id>
+						<goals>
+							<goal>xjc</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<sources>
+						<source>${project.basedir}/src/main/resources/countries.xsd</source>
+					</sources>
+				</configuration>
+			</plugin>
+
+
+>>>>>>> 93c97be32d715f57d09173b5011473c798de9c76
 		</plugins>
 	</build>
 
